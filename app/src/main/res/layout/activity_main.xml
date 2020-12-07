@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <!--
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EE0000"
+        android:drawableLeft="@drawable/ic_1"
+        android:drawableRight="@drawable/ic_2"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="Inbox"
+        android:textColorHint="#FFFFFF"
+         />
+         -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_above="@+id/navigation1"
+
+        >
+
+
+    </FrameLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+
+            android:background="@color/colorPrimary"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemBackground="@color/colorPrimary"
+
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/navigation" />
+
+
+
+
+</RelativeLayout>
